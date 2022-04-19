@@ -18,3 +18,11 @@ function videoEnd() {
     buttonsDiv.classList.toggle("none-display")
     video.classList.toggle("none-display")
 }
+
+(function firstVideoLoad(){
+    const videoSource = document.createElement('source')
+    videoSource.setAttribute('src', `/media/nargas.mp4?v=${new Date().getTime()}`)
+    videoSource.setAttribute('type', 'video/mp4')
+
+    video.appendChild(videoSource)
+})()
