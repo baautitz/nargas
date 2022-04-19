@@ -21,7 +21,7 @@ function videoEnd() {
 
 (function firstVideoLoad(){
     const videoSource = document.createElement('source')
-    videoSource.setAttribute('src', `/media/nargas.mp4?v=${new Date().getTime()}`)
+    videoSource.setAttribute('src', `/nargas/media/nargas.mp4?v=${new Date().getTime()}`)
     videoSource.setAttribute('type', 'video/mp4')
 
     video.appendChild(videoSource)
